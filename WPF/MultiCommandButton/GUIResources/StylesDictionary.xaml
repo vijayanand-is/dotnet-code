@@ -1,0 +1,31 @@
+﻿<ResourceDictionary
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+	<Style TargetType="Run" x:Key="runForeground">
+		<Setter Property="Foreground">
+			<Setter.Value>
+				<LinearGradientBrush>
+					<GradientStop Color="Goldenrod" Offset="0.33" />
+					<GradientStop Color="Gold" Offset="0.66" />
+					<GradientStop Color="DarkGoldenrod" Offset="0.99" />
+				</LinearGradientBrush>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style TargetType="Button" x:Key="buttonBackground">
+		<Setter Property="Background">
+			<Setter.Value>
+				<LinearGradientBrush StartPoint="0.4,0" EndPoint="0.4,1" ice:Freeze="True" >
+					<GradientStop Color="Tan" Offset="0.33" />
+					<GradientStop Color="PeachPuff" Offset="0.66" />
+					<GradientStop Color="BurlyWood" Offset="0.9" />
+				</LinearGradientBrush>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style TargetType="TextBlock" x:Key="buttonForeground">
+		<Setter Property="Foreground" Value="Indigo"/>
+	</Style>
+</ResourceDictionary>
+	
